@@ -21,4 +21,18 @@
     //Se imprime el restante de la división entre las variables numero 1 y 2:
     echo 'resto: '.($numero1%$numero2).'<br>';
     
+    //Operadores de incremento y decremento
+
+    //Se declara variable año con el valor 2019:
+    $year = 2019;
+    
+    //Incremento
+    //Se incrementa usando el doble signo ++ la variable year a 2020
+    $year++;
+    
+    //Decremento
+    //Se decrementa usando el doble signo -- la variable year a 2019
+    $year--;
+    
+    echo "<h1>$year</h1>";
 ?>

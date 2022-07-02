@@ -35,4 +35,21 @@
     $year--;
     
     echo "<h1>$year</h1>";
+    
+    //Operadores de asignación
+    $edad = 55;
+    echo $edad.'<br>';
+    
+    //$edad = $edad + 5;
+    echo ($edad+=5).'<br>';
+    
+    echo ($edad-=5).'<br>';
+    
+    echo ($edad*=2).'<br>';
+    
+    echo ($edad/=3).'<br>';
+    
+    echo ($edad%=5).'<br>';
+    
+    
 ?>

@@ -43,13 +43,16 @@
     //$edad = $edad + 5;
     echo ($edad+=5).'<br>';
     
+    //Resta
     echo ($edad-=5).'<br>';
     
+    //Multiplicación
     echo ($edad*=2).'<br>';
     
+    //División
     echo ($edad/=3).'<br>';
     
+    //Resto
     echo ($edad%=5).'<br>';
-    
     
 ?>

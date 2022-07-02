@@ -15,4 +15,12 @@ define('web', 'marcosanchez.com');
 echo '<h1>'.nombre.'</h1>';
 echo '<h3>'.web.'</h3>';
 
+//Constantes predefinidias
+echo PHP_OS.'<br>';
+echo PHP_VERSION.'<br>';
+echo PHP_EXTENSION_DIR.'<br>';
+echo __LINE__.'<br>';
+echo __FILE__.'<br>';
+echo __FUNCTION__.'<br>';
+
 ?>

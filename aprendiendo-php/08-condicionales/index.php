@@ -87,4 +87,26 @@
          echo "El año es menor a 2021";
      }
      
+     echo "<br>";
+     
+     //Declaración de variables para usar dentro de la siguiente condicional:
+     $nombre = "Bill Gates";
+     $edad = 43;
+     $mayoriaEdad = 18;
+     $continente = "America";
+     $ciudad = "CDMX";
+     
+     //Ejemplo de if para comprobar si la variable edad es igual o mayor
+     //a 18 (Mayoría de edad)
+     if($edad >= 18){
+         echo $nombre.' Cumple la mayoría de edad<br>';
+         if($continente == "America"){
+             echo $nombre.' Vive en: '.$ciudad.'<br>';
+         }else{
+             echo "NO es de America";
+         }
+     }else{
+         echo $nombre.' NO Cumple la mayoría de edad';
+     }
+     
 ?>

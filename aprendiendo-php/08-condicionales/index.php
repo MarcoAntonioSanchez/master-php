@@ -186,4 +186,19 @@
      }else{
          echo "Aquí no se habla español";
      }
+     
+     echo "<br>";
+     
+     //Operador go to
+     goto marca;
+     echo "<h3>Instrucción 1</h3>";
+     echo "<h3>Instrucción 2</h3>";
+     echo "<h3>Instrucción 3</h3>";
+     echo "<h3>Instrucción 4</h3>";
+     
+     //No importa que se encuentre de por medio entre el goto y la marca asignada
+     //el código correra hasta y a partir de la marca asignada siempre
+     
+     marca:
+        echo "Me he saltado 4 echos";
 ?>

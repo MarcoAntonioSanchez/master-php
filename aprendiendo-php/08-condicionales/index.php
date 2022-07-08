@@ -109,6 +109,7 @@
          echo $nombre.' NO Cumple la mayoría de edad';
      }
      
+     //Ejemplo de else if anidados no óptimos y no recomendados
      $dia = 1;
      
      if($dia == 1){
@@ -121,5 +122,43 @@
                 echo "Es Miercoles";
             }
         }
+     }
+     
+     //Ejemplo de else is adecuado y recomendado
+     if($dia == 1){
+         echo "LUNES";
+     }elseif($dia == 2){
+         echo "MARTES";
+     }elseif($dia == 3){
+         echo "MIERCOLES";
+     }
+     
+     echo "<br>";
+     
+     //Varias condiciones en una sola
+     $edad1 = 18;
+     $edad2 = 64;
+     $edadOficial = 20;
+     
+     if($edadOficial >= $edad1 && $edadOficial <= $edad2){
+         echo "Si esta en edad para trabajar";
+     }else{
+         echo "No esta en edad para trabajar";
+     }
+     
+     //Operadores lógicos
+     // && AND
+     // || OR
+     // !  NOT
+     // and texto
+     // or  texto
+     
+     echo "<br>";
+     
+     $pais = "USA";
+     if($pais == "México" || $pais == "España" || $pais == "Colombia"){
+         echo "En este país se habla español";
+     }else{
+         echo "Aquí no se habla español";
      }
 ?>

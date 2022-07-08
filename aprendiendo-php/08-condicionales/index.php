@@ -79,17 +79,17 @@
      //Ejemplo de if usando el comparador mayor o igual que:
      $year = 2021;
      //Si el valor de la variable year es distinto a 2021
-     if($year >= 2021){
+     if($year >= 2021){     //Declaración de variables para usar dentro de la siguiente condicional:
+
          //Imprime en pantalla el siguiente texto:
          echo "El año es mayor o igual a 2021";
          //Para los demas resultados, imprime el siguiente mensaje:
      }else{
          echo "El año es menor a 2021";
-     }
-     
+     }     
+
      echo "<br>";
      
-     //Declaración de variables para usar dentro de la siguiente condicional:
      $nombre = "Bill Gates";
      $edad = 43;
      $mayoriaEdad = 18;
@@ -109,4 +109,17 @@
          echo $nombre.' NO Cumple la mayoría de edad';
      }
      
+     $dia = 1;
+     
+     if($dia == 1){
+         echo "Es Lunes";
+     }else{
+        if($dia == 2){
+            echo "Es Martes";
+        }else{
+            if($dia == 3){
+                echo "Es Miercoles";
+            }
+        }
+     }
 ?>

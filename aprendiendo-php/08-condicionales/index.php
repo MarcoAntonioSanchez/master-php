@@ -135,6 +135,31 @@
      
      echo "<br>";
      
+     //Alternativa con SWITCH
+     $diaHoy = 6;
+     
+     switch ($diaHoy){
+         case 1:
+             echo "LUNES";
+             break;
+         case 2:
+             echo "MARTES";
+             break;
+         case 3:
+             echo "MIERCOLES";
+             break;
+         case 4:
+             echo "JUEVES";
+             break;
+         case 5:
+             echo "VIERNES";
+             break;
+         default:
+             echo "FIN DE SEMANA";
+     }
+     
+     echo "<br>";
+     
      //Varias condiciones en una sola
      $edad1 = 18;
      $edad2 = 64;

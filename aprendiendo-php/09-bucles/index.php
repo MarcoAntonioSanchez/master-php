@@ -53,4 +53,23 @@ while($contador <= 10){
     echo "$numero x $contador = ".($numero*$contador)."<br/>";
     $contador++;
 }
+
+/*Bucle do while
+do{
+    //Bloque de instrucciones
+}while(condicion);
+*/
+
+//Ejemplo de bucle do while
+//Si la edad es mayor o igual a 18 el bucle continua
+//Y si el contador es mayor a 10 el bucle se detiene
+$edad = 17;
+$contador = 1;
+do{
+    echo "Tienes acceso al VIP $contador <br>";
+    $contador++;
+}while($edad >= 18 && $contador <= 10);
+
+
+
 ?>

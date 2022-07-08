@@ -20,6 +20,8 @@ while($numero <= 100){
 
 */
 
+//Otro ejemplo de bucle while acomodando los caracteres a imprimir
+//impidiendo la coma después del número 100
 $numero = 0;
 while($numero <= 100){
     echo $numero;
@@ -30,4 +32,25 @@ while($numero <= 100){
     $numero++;
 }
 
+echo "<br>";
+//Ejemplo usando isset para comprobar directamente si existe
+//arreglo global $_GET
+
+if(isset($_GET['numero'])){
+    
+//(int) Para cambiar el tipo de dato de string a entero o int
+    $numero = (int)$_GET['numero'];
+}else{
+    $numero = 1;
+}
+
+//Ejemplo de while usando el metodo GET para mostrar la tabla de multiplicación
+//correspondiente. URL: /?numero=8
+echo "<h1>Tabla de multiplicar del número $numero</h1>";
+
+$contador = 0;
+while($contador <= 10){
+    echo "$numero x $contador = ".($numero*$contador)."<br/>";
+    $contador++;
+}
 ?>

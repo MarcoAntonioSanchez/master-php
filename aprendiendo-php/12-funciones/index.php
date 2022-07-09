@@ -28,12 +28,27 @@ function muestraNombres(){ //Definición de la función
 muestraNombres(); //Invocar o llamar a la función
 
 echo "<h3>Ejemplo 2</h3>";
-echo "<p>Función que toma e imprime un numero por parametro</p>";
+echo "<p>Función que toma e imprime un numero por parametro para imprimir"
+. " su tabla de multiplicación</p>";
 
-function tabla($numero){
-    echo $numero;
+function tabla($numero){ //Se declara función con parametro $numero
+    echo "<h4> Tabla de multiplicar del numero: $numero</h4>"; //Se imprime texto junto al valor del parametro
+    for($i = 1; $i <= 10; $i++){ //Se abre un bucle for con variable $i condicionada a 10
+        $operacion = $numero*$i; //Se realiza interación de la operación $numero multiplicado por $i
+        echo "$numero x $i = $operacion<br>"; //Se imprime texto de presentación de la operación para imprimirse como tabla
+    }
 }
 
-tabla(55);
+/*
+if(isset($_GET['numero'])){
+    tabla($_GET['numero']); //Se define que el parametro $numero vendra de la URL por metodo GET
+}else{
+    echo "No hay numero para mostrar tabla de multiplicar";
+}
+*/
+
+for($i = 0; $i <= 10; $i++){ //Se declara bucle for con la variable $i condicionada hasta 10
+    tabla($i); //Se imprime la funcion tabla con el parametro $i del bucle for
+}
 
 ?>

@@ -55,12 +55,16 @@ echo "<h3>Ejemplo 3</h3>";
 echo "<p>Función que imprime las operaciones básicas de una calculadora"
 . " a partir de 2 numeros:</p>";
 
-function calculadora($numero1, $numero2){
+function calculadora($numero1, $numero2, $negrita = false){ //Se agrega un tercer parametro $negrita
     //Conjunto de instrucciones a ejecutar
     $suma = $numero1 + $numero2;
     $resta = $numero1 - $numero2;
     $multiplicacion = $numero1 * $numero2;
     $division = $numero1 / $numero2;
+    
+    if($negrita){ //Si negrita existe y es igual a true
+        echo "<h1>"; //Entonces abre una etiqueta h1
+    }
     
     echo "$numero1 y $numero2 <br>";
     echo "Suma: $suma <br>";
@@ -69,6 +73,10 @@ function calculadora($numero1, $numero2){
     echo "División: $division <br>";
     echo "<br>";
 }
+
+    if($negrita){ //Si negrita nuevamente es igual a true
+        echo "</h1>"; //Se cierra la etiqueta /h1
+    }
 
 calculadora(10, 30);
 calculadora(100, 50);

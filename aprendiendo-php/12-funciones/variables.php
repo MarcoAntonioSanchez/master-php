@@ -43,22 +43,28 @@ echo "<hr>";
 echo "<h3>Ejemplo 2</h3>";
 echo "<p>Funciones variables</p>";
 
+//Se declara una función sin parametros
 function buenosDias(){
-    return "Hola, buenos días!";
+    return "Hola, buenos días!"; //Que retorna una cadena de texto (string)
 }
 
+//Se declara una segunda función, también vacía
 function buenasTardes(){
-    return "Hey, que tal la comida?";
+    return "Hey, que tal la comida?"; //Que retorna otra cadena de texto (string)
 }
 
+//Se declara una 3er función, también vacía
 function buenasNoches(){
-    return "Adios, que disfrutes la cena!";
+    return "Adios, que disfrutes la cena!"; //Que retorna otra cadena de texto diferente 
 }
 
+//Se declara una variable cuyo valor será un parametro HTTP sobre la misma variable horario
 $horario = $_GET['horario'];
 
+//Se declara una 2da variable para concatenar la primer parte del string que llamrá a la funciión variable dependiendo del nombre acompletado por medio de los parametros HTTP
 $miFuncion = "buenas".$horario;
 
+//Se imprime la variable miFunción y se invoca como a una variable sin parametros
 echo $miFuncion();
 
 echo "<hr>";

@@ -98,27 +98,30 @@ echo "<p>Función que imprime las opraciones básicas de una calculadora, con re
     $resta = $numero3 - $numero4;
     $multiplicacion = $numero3 * $numero4;
     $division = $numero3 / $numero4;
-    
+    //Se declara una variable dentro de la función con un string vacío
     $cadenaTexto = "";
     
     //Condición: si negrita es verdadera (true)
     if ($negrita){
-        $cadenaTexto .= "<h1>"; //Entonces se imprime la apertura de un h1
+        $cadenaTexto .= "<h1>"; //Entonces se concatena la apertura de un h1 a la variable cadenaTexto
     }
-    //Se imprimen instrucciones
+    //Se concatenan las instrucciones y etiquetas br a la variable cadenaTexto
+    //acumulando así su contenido (valor), en cada proceso de la función
     $cadenaTexto .= "suma: $suma <br/>";
     $cadenaTexto .= "resta: $resta <br/>";
     $cadenaTexto .= "multiplicacion: $multiplicacion <br/>";
     $cadenaTexto .= "division: $division <br/>";
     //Condición: si negrita sigue siendo verdadera (true)
     if ($negrita){
-        $cadenaTexto .= "</h1>"; //Entonces se imprime el cierre del h1
+        $cadenaTexto .= "</h1>"; //Entonces se concatena el cierre del h1 a la variable cadenaTexto
     }
     
+    //Se imprime el var_dump de la variable cadenaTexto hasta este punto
     var_dump($cadenaTexto);
-    return $cadenaTexto;
+    return $cadenaTexto; //Se retorna (return) la variable como resultado del proceso de la función
 }
 
+//Se imprime con un echo el llamado a la función, para imprimir en su lugar el resultado de esta (return / retorno)
 echo calculadoraConR(10, 30, true); //Se invoca o se manda a llamar a la funcion calculadora con los parametros 1 y 2
 
 ?>

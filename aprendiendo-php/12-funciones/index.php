@@ -124,4 +124,26 @@ echo "<p>Función que imprime las opraciones básicas de una calculadora, con re
 //Se imprime con un echo el llamado a la función, para imprimir en su lugar el resultado de esta (return / retorno)
 echo calculadoraConR(10, 30, true); //Se invoca o se manda a llamar a la funcion calculadora con los parametros 1 y 2
 
+echo "<h3>Ejemplo 6</h3>";
+echo "<p>Función que imprime el nombre y los apellidos</p>";
+
+function getNombre($nombre){
+    $texto = "El nombre es: $nombre";
+    return $texto
+;}
+
+function getApellidos($apellidos){
+    $texto = "Los apellidos son: $apellidos";
+    return $texto
+;}
+
+function devuelveElNombreCompleto($nombre, $apellidos){
+    $texto = getNombre($nombre)
+            ."<br/>".
+            getApellidos($apellidos);
+    return $texto;
+}
+
+echo devuelveElNombreCompleto("Marco", "Antonio Sánchez");
+
 ?>

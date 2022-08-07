@@ -7,3 +7,6 @@
     </ul>
     </div>
     <hr>
+    <?php
+    $nombre = "Marco A. Sánchez";
+    ?>

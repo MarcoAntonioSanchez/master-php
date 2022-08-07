@@ -17,6 +17,9 @@ include 'includes/header.php';
         <p>Texto de prueba de la página de inicio</p>
     </div>
         <hr>
+        <?php 
+        var_dump($nombre);
+        ?>
     <!-- Footer -->
 <?php
 include 'includes/footer.php';

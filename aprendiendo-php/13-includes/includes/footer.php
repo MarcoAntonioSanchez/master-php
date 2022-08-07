@@ -1,5 +1,5 @@
     <div>
         <footer>
-            Todos los derechos reservados &copy; Marco A. Sánchez <?=date('Y')?>
+            Todos los derechos reservados &copy; <?php echo $nombre ?> <?=date('Y')?>
         </footer>
     </div>

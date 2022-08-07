@@ -54,66 +54,26 @@ for($i = 0; $i <= 10; $i++){ //Se declara bucle for con la variable $i condicion
 echo "<h3>Ejemplo 3</h3>";
 echo "<p>Función que imprime las operaciones básicas de una calculadora"
 . " a partir de 2 numeros:</p>";
-    /*
-function calculadora($numero1, $numero2, $negrita = false){ //Se agrega un tercer parametro $negrita
+
+    function calculadora($numero1, $numero2){
     //Conjunto de instrucciones a ejecutar
     $suma = $numero1 + $numero2;
     $resta = $numero1 - $numero2;
     $multiplicacion = $numero1 * $numero2;
     $division = $numero1 / $numero2;
     
-    if($negrita){ //Si negrita existe y es igual a true
-        echo "<h1>"; //Entonces abre una etiqueta h1
-    }
-    
-    echo "$numero1 y $numero2 <br>";
-    echo "Suma: $suma <br>";
-    echo "Resta: $resta <br>";
-    echo "Multiplicación: $multiplicacion <br>";
-    echo "División: $division <br>";
-    echo "<br>";
+    echo "suma: $suma <br/>";
+    echo "resta: $resta <br/>";
+    echo "multiplicacion: $multiplicacion <br/>";
+    echo "division: $division <br/>";
+    echo "<hr/>";
 }
 
-    if($negrita){ //Si negrita nuevamente es igual a true
-        echo "</h1>"; //Se cierra la etiqueta /h1
-    }
-    
-    */
+calculadora(10, 30); //Se invoca o se manda a llamar a la funcion calculadora con los parametros 1 y 2
 
-    function calculadora($numero1, $numero2, $negrita = false){ //Se agrega un tercer parametro $negrita
-    //Conjunto de instrucciones a ejecutar
-    $suma = $numero1 + $numero2;
-    $resta = $numero1 - $numero2;
-    $multiplicacion = $numero1 * $numero2;
-    $division = $numero1 / $numero2;
-    
-    $cadenaTexto = "";
-    
-    if($negrita){ //Si negrita existe y es igual a true
-        $cadenaTexto .= "<h1>"; //Entonces abre una etiqueta h1
-    }
-    
-    $cadenaTexto .= "$numero1 y $numero2 <br>";
-    $cadenaTexto .= "Suma: $suma <br>";
-    $cadenaTexto .= "Resta: $resta <br>";
-    $cadenaTexto .= "Multiplicación: $multiplicacion <br>";
-    $cadenaTexto .= "División: $division <br>";
-    $cadenaTexto .= "<br>";
-}
+/*
 
-    if($negrita){ //Si negrita nuevamente es igual a true
-        $cadenaTexto .= "</h1>"; //Se cierra la etiqueta /h1
-        
-        var_dump($cadenaTexto);
-        return true;
-    }
-
-
-calculadora(10, 30); //Se invoca o se manda a llamar a la funcion calculadora con los parametros 1 y 2, en 3 ocaciones:
-calculadora(100, 50);
-calculadora(2, 7);
-
-echo "<h3>Ejemplo 4</h3>";
+ * echo "<h3>Ejemplo 4</h3>";
 echo "<p>Función que devuelve un nombre por medio de una variable y "
         . " retornando el parametro:</p>";
 
@@ -123,6 +83,5 @@ function devuelveElNombre($nombre){
 
 echo devuelveElNombre("Marco A. Sánchez");
 
-
-
+*/
 ?>

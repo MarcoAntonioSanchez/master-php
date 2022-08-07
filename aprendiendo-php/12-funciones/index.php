@@ -127,23 +127,29 @@ echo calculadoraConR(10, 30, true); //Se invoca o se manda a llamar a la funcion
 echo "<h3>Ejemplo 6</h3>";
 echo "<p>Función que imprime el nombre y los apellidos</p>";
 
+//Se declara la funcion getName con la variable $nombre por parametro
 function getNombre($nombre){
-    $texto = "El nombre es: $nombre";
+    $texto = "El nombre es: $nombre"; //Se declara una variable local con la variable $nombre como valor
+    return $texto // se retorna la variable $texto
+;}
+
+//Se declara una 2da función getApellidos para los apellidos
+function getApellidos($apellidos){ //Se declara con la variable $apellidos
+    $texto = "Los apellidos son: $apellidos"; //El valor ahora es la variable apellidos
     return $texto
 ;}
 
-function getApellidos($apellidos){
-    $texto = "Los apellidos son: $apellidos";
-    return $texto
-;}
-
+//Se declara una 3er función desde la cual poder llamar a las 2 anteriores
+//obteniendo una mejor estructura en la función y con opción de escalamiento sencillo
 function devuelveElNombreCompleto($nombre, $apellidos){
-    $texto = getNombre($nombre)
-            ."<br/>".
-            getApellidos($apellidos);
+    $texto = getNombre($nombre) //Se declara una variable con la función getNombre como valor
+            ."<br/>". //Se concatena a la variable $texto un salto de linea
+            getApellidos($apellidos); //Se concatena igualmente la función getApellidos
     return $texto;
 }
 
+//Se imprime e invoca al mismo tiempo la función devuelveElNombreCompleto con sus parametros definidos
+//Así el resultado se mostrará en el mismo lugar desde donde se invoco a la función
 echo devuelveElNombreCompleto("Marco", "Antonio Sánchez");
 
 ?>

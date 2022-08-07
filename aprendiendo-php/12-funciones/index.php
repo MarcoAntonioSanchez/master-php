@@ -55,21 +55,28 @@ echo "<h3>Ejemplo 3</h3>";
 echo "<p>Función que imprime las operaciones básicas de una calculadora"
 . " a partir de 2 numeros:</p>";
 
-    function calculadora($numero1, $numero2){
+    function calculadora($numero1, $numero2, $negrita = false){ //Se agrega un 3er parametro inicializado como falso
     //Conjunto de instrucciones a ejecutar
     $suma = $numero1 + $numero2;
     $resta = $numero1 - $numero2;
     $multiplicacion = $numero1 * $numero2;
     $division = $numero1 / $numero2;
-    
+    //Condición: si negrita es verdadera (true)
+    if ($negrita){
+        echo "<h1>"; //Entonces se imprime la apertura de un h1
+    }
+    //Se imprimen instrucciones
     echo "suma: $suma <br/>";
     echo "resta: $resta <br/>";
     echo "multiplicacion: $multiplicacion <br/>";
     echo "division: $division <br/>";
-    echo "<hr/>";
+    //Condición: si negrita sigue siendo verdadera (true)
+    if ($negrita){
+        echo "</h1>"; //Entonces se imprime el cierre del h1
+    }
 }
 
-calculadora(10, 30); //Se invoca o se manda a llamar a la funcion calculadora con los parametros 1 y 2
+calculadora(10, 30, true); //Se invoca o se manda a llamar a la funcion calculadora con los parametros 1 y 2
 
 /*
 

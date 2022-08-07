@@ -39,3 +39,26 @@ function holaMundo(){
 holaMundo(); // Se invoca a la función holaMundo
 
 echo "<hr>";
+
+echo "<h3>Ejemplo 2</h3>";
+echo "<p>Funciones variables</p>";
+
+function buenosDias(){
+    return "Hola, buenos días!";
+}
+
+function buenasTardes(){
+    return "Hey, que tal la comida?";
+}
+
+function buenasNoches(){
+    return "Adios, que disfrutes la cena!";
+}
+
+$horario = $_GET['horario'];
+
+$miFuncion = "buenas".$horario;
+
+echo $miFuncion();
+
+echo "<hr>";

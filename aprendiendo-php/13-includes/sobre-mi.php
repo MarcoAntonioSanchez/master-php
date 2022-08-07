@@ -18,10 +18,8 @@ include 'includes/header.php';
     </div>
         <hr>
     <!-- Footer -->
-    <div>
-        <footer>
-            Todos los derechos reservados &copy; Marco A. Sánchez <?=date('Y')?>
-        </footer>
-    </div>
+<?php
+include 'includes/footer.php';
+?>
 </body>
 </html>

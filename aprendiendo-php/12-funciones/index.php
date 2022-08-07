@@ -88,4 +88,37 @@ function devuelveElNombre($nombre){
 
 //Imprime e invoca la función deuvelveElNombre con un nombre por parametro
 echo devuelveElNombre("Marco A. Sánchez");
+
+echo "<h3>Ejemplo 5</h3>";
+echo "<p>Función que imprime las opraciones básicas de una calculadora, con retorno:</p>";
+
+    function calculadoraConR($numero3, $numero4, $negrita = false){ //Se agrega un 3er parametro inicializado como falso
+    //Conjunto de instrucciones a ejecutar
+    $suma = $numero3 + $numero4;
+    $resta = $numero3 - $numero4;
+    $multiplicacion = $numero3 * $numero4;
+    $division = $numero3 / $numero4;
+    
+    $cadenaTexto = "";
+    
+    //Condición: si negrita es verdadera (true)
+    if ($negrita){
+        $cadenaTexto .= "<h1>"; //Entonces se imprime la apertura de un h1
+    }
+    //Se imprimen instrucciones
+    $cadenaTexto .= "suma: $suma <br/>";
+    $cadenaTexto .= "resta: $resta <br/>";
+    $cadenaTexto .= "multiplicacion: $multiplicacion <br/>";
+    $cadenaTexto .= "division: $division <br/>";
+    //Condición: si negrita sigue siendo verdadera (true)
+    if ($negrita){
+        $cadenaTexto .= "</h1>"; //Entonces se imprime el cierre del h1
+    }
+    
+    var_dump($cadenaTexto);
+    return $cadenaTexto;
+}
+
+echo calculadoraConR(10, 30, true); //Se invoca o se manda a llamar a la funcion calculadora con los parametros 1 y 2
+
 ?>

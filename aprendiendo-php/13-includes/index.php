@@ -9,7 +9,7 @@
 <body>
     <!-- Header -->
 <?php
-include 'includes/header.php';
+require_once 'includes/header.php';
 ?>
     <!-- Content -->
     <div>
@@ -22,7 +22,7 @@ include 'includes/header.php';
         ?>
     <!-- Footer -->
 <?php
-include 'includes/footer.php';
+require_once 'includes/footer.php';
 ?>
 </body>
 </html>

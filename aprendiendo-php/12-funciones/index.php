@@ -78,17 +78,14 @@ echo "<p>Función que imprime las operaciones básicas de una calculadora"
 
 calculadora(10, 30, true); //Se invoca o se manda a llamar a la funcion calculadora con los parametros 1 y 2
 
-/*
+echo "<h3>Ejemplo 4</h3>";
+echo "<p>Función que retorna (return) un nombre:</p>";
 
- * echo "<h3>Ejemplo 4</h3>";
-echo "<p>Función que devuelve un nombre por medio de una variable y "
-        . " retornando el parametro:</p>";
-
+//Inicio de la función, con la variable nombre por parametro
 function devuelveElNombre($nombre){
-    return "El nombre es: $nombre";
+    return "El nombre es: $nombre"; //Retorno de un string acompañado de la variable nombre
 }
 
+//Imprime e invoca la función deuvelveElNombre con un nombre por parametro
 echo devuelveElNombre("Marco A. Sánchez");
-
-*/
 ?>

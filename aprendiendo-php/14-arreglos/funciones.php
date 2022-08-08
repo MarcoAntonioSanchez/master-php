@@ -54,3 +54,13 @@ $resultado = array_search('Costa', $cantantes);
 var_dump($resultado);
 
 echo "<hr>";
+
+echo "<h3>Ejemplo 6</h3>";
+echo "<p>Contar elementos dentro de un arreglo (array):</p>";
+
+//Contar elementos
+echo count($cantantes);
+echo "<br/>";
+echo sizeof($cantantes);
+
+echo "<hr>";

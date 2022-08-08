@@ -15,4 +15,3 @@ if(empty($texto)){
 }else{
     echo "La variable tiene este contenido dentro: ".$texto;
 }
-

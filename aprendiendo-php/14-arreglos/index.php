@@ -11,8 +11,19 @@ echo "<p>Recorriendo arreglos por posición:</p>";
 $pelicula = "Batmna";
 $peliculas = array('Batman', 'Spiderman', 'El señor de los anillos');
 $cantantes = ['2pac', 'Eminem', 'Snoop Dogg'];
+$personas = array(
+    'Nombre' => 'Marco A.',
+    'Apellidos' => 'Sánchez',
+    'Web' => 'www.marcoasanchez.com'
+);
 
-echo $peliculas[0];
+var_dump($personas);
+echo "<h2>Persona 1:</h2><br/>";
+echo "Nombre: ".$personas['Nombre']."<br/>";
+echo "Apellidos: ".$personas['Apellidos']."<br/>";
+echo "Sitio web: ".$personas['Web']."<br/>";
+
+echo "<br/>".$peliculas[0];
 echo "<hr>";
 
 //Recorrer con for
@@ -37,5 +48,31 @@ foreach ($cantantes as $cantante) {
     echo "<li>".$cantante."</li>";
 }
 echo "</ul>";
+
+echo "<hr>";
+
+echo "<h3>Ejemplo 4</h3>";
+echo "<p>Arreglos multidimensionales:</p>";
+
+$contactos = array(
+    array(
+      'nombre' => 'Marco',
+      'email' => 'marco@mail.com'
+    ),
+    array(
+      'nombre' => 'Antonio',
+      'email' => 'antonio@mail.com'
+    ),
+    array(
+      'nombre' => 'Sánchez',
+      'email' => 'sanchez@mail.com'
+    ),
+);
+
+echo $contactos[1]['nombre'];
+
+foreach($contactos as $key => $contacto) {
+    var_dump($contacto['nombre']);
+}
 
 echo "<hr>";
